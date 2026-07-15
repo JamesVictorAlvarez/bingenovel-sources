@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "bingenovel-sources",
+  "name": "BingeNovel Sources (personal)",
+  "description": "Personal, unofficial source definitions for BingeNovel. Not affiliated with, endorsed by, or bundled with BingeNovel.",
+  "publisher": {
+    "name": "JamesVictorAlvarez",
+    "publicKey": "cac1d0431fae69f59b967555420a56b49a1a2bcd26a83c7fd960b80e25d5134d",
+    "homepage": "https://github.com/JamesVictorAlvarez/bingenovel-sources",
+    "supportUrl": "https://github.com/JamesVictorAlvarez/bingenovel-sources/issues"
+  }
+}
