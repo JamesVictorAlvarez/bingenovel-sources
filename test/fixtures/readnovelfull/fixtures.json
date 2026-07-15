@@ -1,0 +1,14 @@
+{
+  "requests": [
+    { "url": "https://readnovelfull.com/novel-list/search?keyword=king&page=1", "file": "search.html", "contentType": "text/html" },
+    { "url": "https://readnovelfull.com/novel-list/most-popular-novel?page=1", "file": "popular.html", "contentType": "text/html" },
+    { "url": "https://readnovelfull.com/novel-list/latest-release-novel?page=1", "file": "latest.html", "contentType": "text/html" },
+    { "url": "https://readnovelfull.com/cleaver-of-sin.html", "file": "detail.html", "contentType": "text/html" }
+  ],
+  "cases": [
+    { "operation": "search", "args": ["king", 1], "expected": "expected.search.json" },
+    { "operation": "popular", "args": [1], "expected": "expected.popular.json" },
+    { "operation": "latest", "args": [1], "expected": "expected.latest.json" },
+    { "operation": "details", "args": ["/cleaver-of-sin.html"], "expected": "expected.details.json" }
+  ]
+}
