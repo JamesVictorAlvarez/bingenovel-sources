@@ -7,8 +7,8 @@
   ],
   "cases": [
     { "operation": "popular", "args": [1], "expected": "expected.popular.json" },
-    { "operation": "details", "args": ["/book/lord-of-the-mysteries"], "expected": "expected.details.json" },
-    { "operation": "chapters", "args": ["/book/lord-of-the-mysteries", 1], "expected": "expected.chapters.json" },
-    { "operation": "chapter", "args": ["/book/lord-of-the-mysteries/chapter-1"], "expected": "expected.chapter.json" }
+    { "operation": "details", "args": ["https://novelfire.net/book/lord-of-the-mysteries"], "expected": "expected.details.json" },
+    { "operation": "chapters", "args": ["https://novelfire.net/book/lord-of-the-mysteries", 1], "expected": "expected.chapters.json" },
+    { "operation": "chapter", "args": ["https://novelfire.net/book/lord-of-the-mysteries/chapter-1"], "expected": "expected.chapter.json" }
   ]
 }

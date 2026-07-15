@@ -9,6 +9,6 @@
     { "operation": "search", "args": ["king", 1], "expected": "expected.search.json" },
     { "operation": "popular", "args": [1], "expected": "expected.popular.json" },
     { "operation": "latest", "args": [1], "expected": "expected.latest.json" },
-    { "operation": "details", "args": ["/cleaver-of-sin.html"], "expected": "expected.details.json" }
+    { "operation": "details", "args": ["https://readnovelfull.com/cleaver-of-sin.html"], "expected": "expected.details.json" }
   ]
 }
