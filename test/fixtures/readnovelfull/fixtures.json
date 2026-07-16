@@ -3,12 +3,16 @@
     { "url": "https://readnovelfull.com/novel-list/search?keyword=king&page=1", "file": "search.html", "contentType": "text/html" },
     { "url": "https://readnovelfull.com/novel-list/most-popular-novel?page=1", "file": "popular.html", "contentType": "text/html" },
     { "url": "https://readnovelfull.com/novel-list/latest-release-novel?page=1", "file": "latest.html", "contentType": "text/html" },
-    { "url": "https://readnovelfull.com/cleaver-of-sin.html", "file": "detail.html", "contentType": "text/html" }
+    { "url": "https://readnovelfull.com/cleaver-of-sin.html", "file": "detail.html", "contentType": "text/html" },
+    { "url": "https://readnovelfull.com/ajax/chapter-archive?novelId=2656", "file": "chapter-archive.html", "contentType": "text/html" },
+    { "url": "https://readnovelfull.com/cleaver-of-sin/chapter-1-lectures.html", "file": "chapter1.html", "contentType": "text/html" }
   ],
   "cases": [
     { "operation": "search", "args": ["king", 1], "expected": "expected.search.json" },
     { "operation": "popular", "args": [1], "expected": "expected.popular.json" },
     { "operation": "latest", "args": [1], "expected": "expected.latest.json" },
-    { "operation": "details", "args": ["https://readnovelfull.com/cleaver-of-sin.html"], "expected": "expected.details.json" }
+    { "operation": "details", "args": ["https://readnovelfull.com/cleaver-of-sin.html"], "expected": "expected.details.json" },
+    { "operation": "chapters", "args": ["https://readnovelfull.com/cleaver-of-sin.html", 1], "expected": "expected.chapters.json" },
+    { "operation": "chapter", "args": ["https://readnovelfull.com/cleaver-of-sin/chapter-1-lectures.html"], "expected": "expected.chapter.json" }
   ]
 }

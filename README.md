@@ -13,10 +13,11 @@ No automated access to a Target Service in this repository has been authorized b
 
 | Source | Domain | Capabilities |
 | --- | --- | --- |
-| ReadNovelFull | readnovelfull.com | search, popular, latest, details |
+| ReadNovelFull | readnovelfull.com | search, popular, latest, details, chapters, chapter |
 | Novel Fire | novelfire.net | popular, details, chapters, chapter |
+| Royal Road | royalroad.com | search, popular, latest, details, chapters, chapter |
 
-ReadNovelFull's novel-details page only embeds a partial (~30-chapter) static snapshot of its chapter list — the complete archive is served from an ajax endpoint keyed by a numeric novel ID that isn't obtainable through this engine's single-identifier calling convention. So `chapters`/`chapter` are intentionally left out of that definition rather than shipped half-working.
+ReadNovelFull's complete chapter archive is served from an ajax endpoint keyed by a numeric novel ID that only appears in the details page markup. The definition reaches it through the engine's derived template values (engine ≥ 1.1.0): the details endpoint extracts `novelId` from `#rating[data-novel-id]` and the chapters template references `{novelId}`. On engines older than 1.1.0 the entry is ineligible rather than half-working.
 
 ## Using this repository
 

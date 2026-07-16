@@ -1,0 +1,17 @@
+{
+  "requests": [
+    { "url": "https://www.royalroad.com/fictions/search?title=mother%20of%20learning&page=1&globalFilters=true", "file": "search.html", "contentType": "text/html" },
+    { "url": "https://www.royalroad.com/fictions/best-rated?page=1", "file": "popular.html", "contentType": "text/html" },
+    { "url": "https://www.royalroad.com/fictions/latest-updates?page=1", "file": "latest.html", "contentType": "text/html" },
+    { "url": "https://www.royalroad.com/fiction/21220/mother-of-learning", "file": "fiction.html", "contentType": "text/html" },
+    { "url": "https://www.royalroad.com/fiction/21220/mother-of-learning/chapter/301778/1-good-morning-brother", "file": "chapter1.html", "contentType": "text/html" }
+  ],
+  "cases": [
+    { "operation": "search", "args": ["mother of learning", 1], "expected": "expected.search.json" },
+    { "operation": "popular", "args": [1], "expected": "expected.popular.json" },
+    { "operation": "latest", "args": [1], "expected": "expected.latest.json" },
+    { "operation": "details", "args": ["https://www.royalroad.com/fiction/21220/mother-of-learning"], "expected": "expected.details.json" },
+    { "operation": "chapters", "args": ["https://www.royalroad.com/fiction/21220/mother-of-learning", 1], "expected": "expected.chapters.json" },
+    { "operation": "chapter", "args": ["https://www.royalroad.com/fiction/21220/mother-of-learning/chapter/301778/1-good-morning-brother"], "expected": "expected.chapter.json" }
+  ]
+}
